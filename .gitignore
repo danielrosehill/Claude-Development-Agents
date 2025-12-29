@@ -1,0 +1,6 @@
+# Private configs
+private/
+
+# Claude config
+.claude/
+CLAUDE.md
