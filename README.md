@@ -2,6 +2,10 @@
 
 A collection of Claude Code configurations for development workflows. Consolidates sub-agents, slash commands, and prompt snippets developed over the past few months.
 
+## Quick Reference
+
+See [INDEX.md](INDEX.md) for a comprehensive alphabetical listing of all 74 configurations with type badges and links.
+
 ## Taxonomy
 
 ### Agents (`/agents/`)
@@ -22,13 +26,25 @@ Paste-able prompt fragments for steering conversations. Not invoked as commands 
 
 **Use when:** You need to inject context or redirect an ongoing conversation without starting a formal workflow.
 
+### Orchestrators (`/orchestrators/`)
+
+Meta-agents that coordinate multiple agents in sequence or parallel. Define workflows that invoke several agents in a single run.
+
+**Use when:** You need a coordinated multi-agent workflow (e.g., code quality review team).
+
+### Crews (`/crews/`)
+
+Curated groups of agents designed to work together on related tasks. Define team compositions with roles and interaction patterns.
+
+**Use when:** Defining which agents collaborate on a domain (e.g., pre-release crew, documentation crew).
+
 ## Directory Structure
 
 ```
 agents/
-  code-editing/        # Code manipulation and cleanup
+  code-editing/        # Code manipulation, cleanup, debloating
   deployment/          # CI/CD and deployment automation
-  development/         # Containerization, dev servers, stack integration
+  development/         # Containerization, dev servers, stack alignment
   github/              # Backups, forks, licensing, collaboration
   ides/                # IDE integrations
   stylistic/           # Writing style enforcement
@@ -38,7 +54,7 @@ agents/
 
 slash-commands/
   codebase/            # Component search, dependency audit, consolidation
-  development/         # Containerize, debug, devserver, backup
+  development/         # Containerize, debug, devserver, backup, typescript-errors
   reviews/             # Stack, database, UI/UX, SEO, social, brand reviews
   workflow/            # Stuck handoffs, retrospectives, starting instructions
 
@@ -48,6 +64,10 @@ snippets/
   debugging/           # Root cause focus, fire prevention
   session/             # Fresh starts, loop detection, corrections
   style/               # Emoji, docs, naming, structure preferences
+
+orchestrators/         # Multi-agent workflow coordination (placeholder)
+
+crews/                 # Curated agent team definitions (placeholder)
 
 private/
   new-configs/         # Staging area for new configurations
@@ -77,6 +97,7 @@ private/
 | `/containerize` | Docker setup | `development/containerize.md` |
 | `/debug` | Focused bug fixing | `subdevelopers/debugging.md` |
 | `/devserver` | Hot-reload setup | `development/devserver.md` |
+| `/typescript-errors` | Resolve all TypeScript errors to zero | - |
 
 ### Reviews (`/slash-commands/reviews/`)
 
