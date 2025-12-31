@@ -1,3 +1,5 @@
+[![Claude Code Projects](https://img.shields.io/badge/Claude%20Code-Projects%20Index-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Repos-Index)
+
 # Claude Development Agents
 
 A collection of Claude Code configurations for development workflows. Consolidates sub-agents, slash commands, and prompt snippets developed over the past few months.
@@ -175,3 +177,7 @@ This toolkit emphasizes:
 - **Fresh Starts** - Recognize when to pivot rather than persist
 - **Root Cause Thinking** - Fix problems, not symptoms
 - **Advisory Over Execution** - Use AI as a strategic guide, not just a task executor
+
+---
+
+For more Claude Code projects, visit my [Claude Code Projects Index](https://github.com/danielrosehill/Claude-Code-Repos-Index).
