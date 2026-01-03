@@ -1,4 +1,0 @@
-Please audit the MCP server:
-
-- Verify that it has correct and logical tool definitions. These should match the structure of the API as currently defined. If you find tools that are incorrect or which are no longer supported by the current API structure, remove them. If you find that the MCP is missing tools that would enhance the MCP, add them. When considering whether new tools would enhance the API, consider whether they woud be useful functions for a user to access via an AI agent interface. Not every single API function needs to be documented, but many will be useful. 
-- Consider, always, tool consolidation. The current state of AI engineering requires that users be strategic about what fucntions are provided as discrete tools versus parameters. Try to rationalise explicit tool definitions by nesting smaller functions as parameters of existing tools where possible.
